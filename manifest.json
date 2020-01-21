@@ -1,0 +1,16 @@
+{
+  "name": "TODO List",
+  "description": "A simple todo list app.",
+  "version": "0.5",
+  "manifest_version": 2,
+  "permissions": [
+     "storage",
+     { "fileSystem": ["write"] }
+  ],
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "icons": { "16": "assets/images/todo-list-16.png", "128": "assets/images/todo-list-128.png" }
+}

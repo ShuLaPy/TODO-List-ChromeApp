@@ -1,0 +1,97 @@
+html, body {
+    overflow-y: visible;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+}
+
+::-webkit-scrollbar-button {
+    display: none !important;
+}
+
+body {
+    background: white;
+}
+
+.container {
+    width: 100%;
+    background-color: none;
+    margin: 0px 0px 35px 0px;
+    background-color: linen;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-transform: uppercase;
+    background-color: lightcoral;
+    margin: 0;
+    padding: 10px 20px;
+    font-weight: normal;
+    color: white;
+}
+
+.fas {
+    float: right;
+}
+
+.icon-minus-circle {
+    line-height: 40px !important;
+    background-color: #ff4444;
+    color: white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin-right: 0px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+li:hover .icon-minus-circle {
+    opacity: 1.0;
+    transform: rotate(180deg);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 0 0 20px;
+    transition: all 0.2s;
+}
+
+li:hover {
+    font-size: 19px;
+}
+
+li:nth-child(odd) {
+    background-color: white;
+}
+
+input {
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: linen;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+    border: 2px solid lightcoral;
+    color: lightcoral;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
